@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="10dp"
+    tools:context="com.example.user.firebaseexample.ui.MainActivity">
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:hint="email"/>
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:hint="password"/>
+    <Button
+        android:id="@+id/addUser"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="add User"
+        android:onClick="addUserAuthentication"/>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_below="@+id/addUser"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:onClick="userSignIN"/>
+
+    <Button
+        android:layout_below="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Google Sign in"
+        android:onClick="googleSignIn"
+       />
+
+
+
+
+</RelativeLayout>
